@@ -1,0 +1,30 @@
+pull_request_rules:
+  - name: automatic merge
+    conditions:
+      - base=main
+    actions:
+      queue:
+
+  - name: dismiss reviews
+    conditions: []
+    actions:
+      dismiss_reviews: {}
+
+
+queue_rules:
+  - name: default
+    queue_conditions:
+      - "#approved-reviews-by>=1"
+      - "check-success=pep8"
+      - "check-success=test (3.8)"
+      - "check-success=test (3.9)"
+      - "check-success=test (3.10)"
+      - "check-success=test (3.11)"
+      - "check-success=test (3.12)"
+    merge_conditions:
+      - "check-success=pep8"
+      - "check-success=test (3.8)"
+      - "check-success=test (3.9)"
+      - "check-success=test (3.10)"
+      - "check-success=test (3.11)"
+      - "check-success=test (3.12)"
