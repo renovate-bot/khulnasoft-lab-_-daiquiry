@@ -85,7 +85,7 @@ logging method and that will be available as part of the record.
 .. literalinclude:: ../../examples/extra.py
 
 Advanced Extra usage
------------
+--------------------
 
 The enhanced logger object provided by `daiquiry.getLogger` is also capable of
 supporting keyword arguments to the logging method without the logger itself
