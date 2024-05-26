@@ -2,8 +2,8 @@
 daiquiry -- Python logging setup helper
 =======================================
 
-.. image:: https://circleci.com/gh/jd/daiquiry.svg?style=svg
-   :target: https://circleci.com/gh/jd/daiquiry
+.. image:: https://circleci.com/gh/nxpkg/daiquiry.svg?style=svg
+   :target: https://circleci.com/gh/nxpkg/daiquiry
 
 .. image:: https://img.shields.io/pypi/v/daiquiry.svg
     :target: https://pypi.python.org/pypi/daiquiry
@@ -13,7 +13,7 @@ The daiquiry library provides an easy way to configure logging. It also
 provides some custom formatters and handlers.
 
 * Free software: Apache license
-* Source: https://github.com/jd/daiquiry
+* Source: https://github.com/nxpkg/daiquiry
 
 Installation
 ============

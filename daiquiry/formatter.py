@@ -33,7 +33,7 @@ DEFAULT_EXTRAS_FORMAT = (
 class ColorFormatter(logging.Formatter):
     """Colorizes log output."""
 
-    # TODO(jd) Allow configuration
+    # TODO(nxpkg) Allow configuration
     LEVEL_COLORS = {
         logging.DEBUG: "\033[00;32m",  # GREEN
         logging.INFO: "\033[00;36m",  # CYAN

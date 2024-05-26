@@ -260,7 +260,7 @@ class Syslog(Output):
         level: typing.Optional[int] = None,
     ) -> None:
         if syslog is None:
-            # FIXME(jd) raise something more specific
+            # FIXME(nxpkg) raise something more specific
             raise RuntimeError("syslog is not available on this platform")
         super(Syslog, self).__init__(
             handlers.SyslogHandler(
@@ -273,7 +273,7 @@ class Syslog(Output):
 
     @staticmethod
     def _find_facility(facility: str) -> int:
-        # NOTE(jd): Check the validity of facilities at run time as they differ
+        # NOTE(nxpkg): Check the validity of facilities at run time as they differ
         # depending on the OS and Python version being used.
         valid_facilities = [
             f
@@ -334,7 +334,7 @@ class Datadog(Output):
         )
 
 
-# FIXME(jd): Is this useful? Remove it?
+# FIXME(nxpkg): Is this useful? Remove it?
 preconfigured: typing.Dict[str, typing.Union[Stream, Output]] = {
     "stderr": STDERR,
     "stdout": STDOUT,
